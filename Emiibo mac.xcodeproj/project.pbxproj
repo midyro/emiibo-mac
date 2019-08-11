@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22DF1CC72B278249A7122F89 /* Pods_Emiibo_mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933BD938AABC6B66E58FA25C /* Pods_Emiibo_mac.framework */; };
+		9950FC6522FEE67C006987C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950FC6422FEE67C006987C4 /* AppDelegate.swift */; };
+		9950FC6722FEE67C006987C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950FC6622FEE67C006987C4 /* ViewController.swift */; };
+		9950FC6922FEE67D006987C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9950FC6822FEE67D006987C4 /* Assets.xcassets */; };
+		9950FC6C22FEE67D006987C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9950FC6A22FEE67D006987C4 /* Main.storyboard */; };
+		9950FC7722FEE7D2006987C4 /* AmiiboResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950FC7622FEE7D2006987C4 /* AmiiboResponse.swift */; };
+		9950FC7922FEE7FF006987C4 /* Amiibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950FC7822FEE7FF006987C4 /* Amiibo.swift */; };
+		9950FC7C22FF03F5006987C4 /* AmiiboHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950FC7B22FF03F5006987C4 /* AmiiboHelper.swift */; };
+		9950FC7F22FF04C0006987C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950FC7E22FF04C0006987C4 /* Constants.swift */; };
+		999194D42300311000DC9C41 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999194D32300311000DC9C41 /* Common.swift */; };
+		999194D62300311E00DC9C41 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999194D52300311E00DC9C41 /* Register.swift */; };
+		999194D82300313000DC9C41 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999194D72300313000DC9C41 /* Mode.swift */; };
+		999194DA2300314000DC9C41 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999194D92300314000DC9C41 /* Tag.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F08DC776A198064C25C9C22 /* Pods-Emiibo mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emiibo mac.debug.xcconfig"; path = "Target Support Files/Pods-Emiibo mac/Pods-Emiibo mac.debug.xcconfig"; sourceTree = "<group>"; };
+		933BD938AABC6B66E58FA25C /* Pods_Emiibo_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emiibo_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		994B828522FF1BE70037DEE7 /* Emiibo mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Emiibo mac.entitlements"; sourceTree = "<group>"; };
+		9950FC6122FEE67C006987C4 /* Emiibo mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emiibo mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9950FC6422FEE67C006987C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9950FC6622FEE67C006987C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9950FC6822FEE67D006987C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9950FC6B22FEE67D006987C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9950FC6D22FEE67D006987C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9950FC6E22FEE67D006987C4 /* Emiibo_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emiibo_mac.entitlements; sourceTree = "<group>"; };
+		9950FC7622FEE7D2006987C4 /* AmiiboResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboResponse.swift; sourceTree = "<group>"; };
+		9950FC7822FEE7FF006987C4 /* Amiibo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amiibo.swift; sourceTree = "<group>"; };
+		9950FC7B22FF03F5006987C4 /* AmiiboHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboHelper.swift; sourceTree = "<group>"; };
+		9950FC7E22FF04C0006987C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		999194D32300311000DC9C41 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		999194D52300311E00DC9C41 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		999194D72300313000DC9C41 /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
+		999194D92300314000DC9C41 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		B3322E9EA6EAED14A96F8150 /* Pods-Emiibo mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emiibo mac.release.xcconfig"; path = "Target Support Files/Pods-Emiibo mac/Pods-Emiibo mac.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9950FC5E22FEE67C006987C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DF1CC72B278249A7122F89 /* Pods_Emiibo_mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0992EDD32BA896D1051682DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				933BD938AABC6B66E58FA25C /* Pods_Emiibo_mac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9950FC5822FEE67C006987C4 = {
+			isa = PBXGroup;
+			children = (
+				9950FC6322FEE67C006987C4 /* Emiibo mac */,
+				9950FC6222FEE67C006987C4 /* Products */,
+				E720004CD03392B1E15296D8 /* Pods */,
+				0992EDD32BA896D1051682DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9950FC6222FEE67C006987C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9950FC6122FEE67C006987C4 /* Emiibo mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9950FC6322FEE67C006987C4 /* Emiibo mac */ = {
+			isa = PBXGroup;
+			children = (
+				994B828522FF1BE70037DEE7 /* Emiibo mac.entitlements */,
+				9950FC7A22FF02C2006987C4 /* Helpers */,
+				9950FC7522FEE6A2006987C4 /* Models */,
+				9950FC7422FEE69B006987C4 /* Controllers */,
+				9950FC6422FEE67C006987C4 /* AppDelegate.swift */,
+				9950FC6822FEE67D006987C4 /* Assets.xcassets */,
+				9950FC6A22FEE67D006987C4 /* Main.storyboard */,
+				9950FC6D22FEE67D006987C4 /* Info.plist */,
+				9950FC6E22FEE67D006987C4 /* Emiibo_mac.entitlements */,
+				9950FC7E22FF04C0006987C4 /* Constants.swift */,
+			);
+			path = "Emiibo mac";
+			sourceTree = "<group>";
+		};
+		9950FC7422FEE69B006987C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9950FC6622FEE67C006987C4 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9950FC7522FEE6A2006987C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9950FC7622FEE7D2006987C4 /* AmiiboResponse.swift */,
+				9950FC7822FEE7FF006987C4 /* Amiibo.swift */,
+				999194D32300311000DC9C41 /* Common.swift */,
+				999194D52300311E00DC9C41 /* Register.swift */,
+				999194D72300313000DC9C41 /* Mode.swift */,
+				999194D92300314000DC9C41 /* Tag.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9950FC7A22FF02C2006987C4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9950FC7B22FF03F5006987C4 /* AmiiboHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E720004CD03392B1E15296D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F08DC776A198064C25C9C22 /* Pods-Emiibo mac.debug.xcconfig */,
+				B3322E9EA6EAED14A96F8150 /* Pods-Emiibo mac.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9950FC6022FEE67C006987C4 /* Emiibo mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9950FC7122FEE67D006987C4 /* Build configuration list for PBXNativeTarget "Emiibo mac" */;
+			buildPhases = (
+				D127840CC7D1BC25D99B45F9 /* [CP] Check Pods Manifest.lock */,
+				9950FC5D22FEE67C006987C4 /* Sources */,
+				9950FC5E22FEE67C006987C4 /* Frameworks */,
+				9950FC5F22FEE67C006987C4 /* Resources */,
+				2354179760ED313FD50A7F6A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emiibo mac";
+			productName = "Emiibo mac";
+			productReference = 9950FC6122FEE67C006987C4 /* Emiibo mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9950FC5922FEE67C006987C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Mitch Rob";
+				TargetAttributes = {
+					9950FC6022FEE67C006987C4 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9950FC5C22FEE67C006987C4 /* Build configuration list for PBXProject "Emiibo mac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9950FC5822FEE67C006987C4;
+			productRefGroup = 9950FC6222FEE67C006987C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9950FC6022FEE67C006987C4 /* Emiibo mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9950FC5F22FEE67C006987C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9950FC6922FEE67D006987C4 /* Assets.xcassets in Resources */,
+				9950FC6C22FEE67D006987C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2354179760ED313FD50A7F6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emiibo mac/Pods-Emiibo mac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emiibo mac/Pods-Emiibo mac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Emiibo mac/Pods-Emiibo mac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D127840CC7D1BC25D99B45F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Emiibo mac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9950FC5D22FEE67C006987C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9950FC7C22FF03F5006987C4 /* AmiiboHelper.swift in Sources */,
+				9950FC7922FEE7FF006987C4 /* Amiibo.swift in Sources */,
+				999194DA2300314000DC9C41 /* Tag.swift in Sources */,
+				9950FC6722FEE67C006987C4 /* ViewController.swift in Sources */,
+				9950FC6522FEE67C006987C4 /* AppDelegate.swift in Sources */,
+				9950FC7722FEE7D2006987C4 /* AmiiboResponse.swift in Sources */,
+				9950FC7F22FF04C0006987C4 /* Constants.swift in Sources */,
+				999194D62300311E00DC9C41 /* Register.swift in Sources */,
+				999194D42300311000DC9C41 /* Common.swift in Sources */,
+				999194D82300313000DC9C41 /* Mode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9950FC6A22FEE67D006987C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9950FC6B22FEE67D006987C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9950FC6F22FEE67D006987C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9950FC7022FEE67D006987C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9950FC7222FEE67D006987C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F08DC776A198064C25C9C22 /* Pods-Emiibo mac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2X5WG6K33H;
+				INFOPLIST_FILE = "Emiibo mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midyro.Emiibo-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9950FC7322FEE67D006987C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3322E9EA6EAED14A96F8150 /* Pods-Emiibo mac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2X5WG6K33H;
+				INFOPLIST_FILE = "Emiibo mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midyro.Emiibo-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9950FC5C22FEE67C006987C4 /* Build configuration list for PBXProject "Emiibo mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9950FC6F22FEE67D006987C4 /* Debug */,
+				9950FC7022FEE67D006987C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9950FC7122FEE67D006987C4 /* Build configuration list for PBXNativeTarget "Emiibo mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9950FC7222FEE67D006987C4 /* Debug */,
+				9950FC7322FEE67D006987C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9950FC5922FEE67C006987C4 /* Project object */;
+}
