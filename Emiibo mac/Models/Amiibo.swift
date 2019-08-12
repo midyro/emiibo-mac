@@ -13,7 +13,6 @@ struct Amiibo: Codable {
     var character, gameSeries, head: String
     var image: String
     var name: String
-//    var release: Release
     var tail: String
     var type: String
 }

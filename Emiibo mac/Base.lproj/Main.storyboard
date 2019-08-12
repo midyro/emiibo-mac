@@ -728,7 +728,7 @@
                                                     <tableColumns>
                                                         <tableColumn identifier="NameId" width="118" minWidth="40" maxWidth="1000" id="eFg-IO-Vac">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Name">
-                                                                <font key="font" metaFont="systemMedium" size="11"/>
+                                                                <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             </tableHeaderCell>
@@ -838,7 +838,7 @@
                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="il7-lq-mlk">
                                                 <rect key="frame" x="78" y="58" width="295" height="295"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="icon_00000000-2" id="dVc-d6-nFq"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="dVc-d6-nFq"/>
                                             </imageView>
                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jeb-4i-XOB">
                                                 <rect key="frame" x="349" y="13" width="96" height="32"/>
@@ -889,7 +889,4 @@
             <point key="canvasLocation" x="307" y="755"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="icon_00000000-2" width="144" height="179.5"/>
-    </resources>
 </document>
