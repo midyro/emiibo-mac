@@ -12,7 +12,6 @@ import AlamofireImage
 
 class AmiiboHelper {
     static let shared = AmiiboHelper(baseUrl: Constants.BaseUrl)
-    let imageCache = AutoPurgingImageCache( memoryCapacity: 111_111_111, preferredMemoryUsageAfterPurge: 90_000_000)
     
     let baseUrl: String
 
@@ -21,18 +20,28 @@ class AmiiboHelper {
     }
 
     func getAmiibos(completion: @escaping (AmiiboResponse?) -> Void){
-        Alamofire.request(self.baseUrl).response { response in
-            
-            guard let data = response.data else { return }
-            do {
-                let decoder = JSONDecoder()
-                let amiiboResponse = try decoder.decode(AmiiboResponse.self, from: data)
+        if hasInternetConnection() {
+            Alamofire.request(self.baseUrl).response { response in
+                
+                guard let data = response.data else { return }
+                do {
+                    let decoder = JSONDecoder()
+                    let amiiboResponse = try decoder.decode(AmiiboResponse.self, from: data)
 
-                completion(amiiboResponse)
-            } catch let error {
-                print(error)
-                completion(nil)
+                    completion(amiiboResponse)
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
             }
+        } else {
+            let alert = NSAlert()
+            alert.messageText = "Unable to get amiibo list"
+            alert.informativeText = "Please check your internet connection"
+            alert.alertStyle = .warning
+            alert.addButton(withTitle: "OK")
+            alert.addButton(withTitle: "Cancel")
+            alert.runModal()
         }
     }
     
@@ -71,6 +80,10 @@ class AmiiboHelper {
         } catch let error as NSError{
             print(error)
         }
+    }
+    
+    private func hasInternetConnection() -> Bool {
+        return NetworkReachabilityManager()?.isReachable ?? false
     }
     
 }
