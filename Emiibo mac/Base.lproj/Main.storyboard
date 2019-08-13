@@ -841,16 +841,42 @@
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="dVc-d6-nFq"/>
                                             </imageView>
                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jeb-4i-XOB">
-                                                <rect key="frame" x="349" y="13" width="96" height="32"/>
+                                                <rect key="frame" x="361" y="-7" width="96" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <buttonCell key="cell" type="push" title="Generate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YYg-kA-cL7">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
                                                 <connections>
-                                                    <action selector="generateJson:" target="XfG-lQ-9wD" id="3zS-Lx-3Em"/>
+                                                    <action selector="generateJson:" target="XfG-lQ-9wD" id="xcX-Og-dn3"/>
                                                 </connections>
                                             </button>
+                                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BRh-bN-QRs">
+                                                <rect key="frame" x="245" y="2" width="102" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="check" title="Random uuid" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="uiw-PV-hsT">
+                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dpk-aq-qzG">
+                                                <rect key="frame" x="20" y="0.0" width="219" height="22"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Amiibo name" drawsBackground="YES" id="YRb-kE-T6B">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WjP-fA-2V7">
+                                                <rect key="frame" x="113" y="203" width="224" height="23"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Please select an Amiibo" id="NZ9-kx-Tv6">
+                                                    <font key="font" metaFont="system" size="19"/>
+                                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
                                         </subviews>
                                     </customView>
                                 </subviews>
@@ -879,8 +905,12 @@
                     </view>
                     <connections>
                         <outlet property="gameSeries" destination="r4i-Zo-kLG" id="lmE-Hy-z5F"/>
+                        <outlet property="generateButton" destination="jeb-4i-XOB" id="O4q-vH-6t1"/>
                         <outlet property="name" destination="k1U-7s-1V7" id="pHk-Jf-epF"/>
+                        <outlet property="nameTextField" destination="Dpk-aq-qzG" id="w9R-cr-Kwc"/>
                         <outlet property="previewImage" destination="il7-lq-mlk" id="dNr-fA-Rny"/>
+                        <outlet property="randomUuid" destination="BRh-bN-QRs" id="ERa-gt-xVj"/>
+                        <outlet property="selectLabel" destination="WjP-fA-2V7" id="Jr8-y9-jZT"/>
                         <outlet property="tableView" destination="1jK-Jp-9cM" id="eVY-ox-gA4"/>
                     </connections>
                 </viewController>

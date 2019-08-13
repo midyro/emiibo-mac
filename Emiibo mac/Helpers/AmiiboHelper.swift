@@ -38,29 +38,30 @@ class AmiiboHelper {
             let alert = NSAlert()
             alert.messageText = "Unable to get amiibo list"
             alert.informativeText = "Please check your internet connection"
-            alert.alertStyle = .warning
+            alert.alertStyle = .critical
             alert.addButton(withTitle: "OK")
             alert.addButton(withTitle: "Cancel")
             alert.runModal()
         }
     }
     
-    func generateJson(amiibo: Amiibo){
+    func generateJson(amiibo: Amiibo, randomUuid: Bool = true, name: String?){
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MMM-dd"
         let date = Date()
         
-        let tags: Tag = Tag(randomUuid:true, uuid: UUID().uuidString)
+        let tags: Tag = Tag(randomUuid:randomUuid, uuid: UUID().uuidString)
         let model: Mode = Mode(amiiboId: amiibo.tail)
-        let register: Register = Register(name: amiibo.name, firstWriteDate: dateFormatter.string(from: date), miiCharInfo: "mii-charinfo.bin")
+        let register: Register = Register(name: name ?? amiibo.name, firstWriteDate: dateFormatter.string(from: date), miiCharInfo: "mii-charinfo.bin")
         let common: Common = Common(lastWriteDate: dateFormatter.string(from: date), writeCounter: 0, version: 0)
-        let path = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Desktop", isDirectory: true).appendingPathComponent("emiibo", isDirectory: true).appendingPathComponent(amiibo.name, isDirectory: true)
+        let path = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Desktop", isDirectory: true).appendingPathComponent("emiibo", isDirectory: true).appendingPathComponent(name ?? amiibo.name, isDirectory: true)
         
         createDirectory(path: path)
         createJsonFile(name: "tag", content: tags, path: path)
         createJsonFile(name: "model", content: model, path: path)
         createJsonFile(name: "register", content: register, path: path)
         createJsonFile(name: "common", content: common, path: path)
+        
     }
     
     private func createJsonFile<T : Encodable>(name: String, content: T, path: URL) {

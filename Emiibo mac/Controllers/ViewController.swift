@@ -15,6 +15,10 @@ class ViewController: NSViewController {
     @IBOutlet weak var tableView: NSTableView!
     @IBOutlet weak var gameSeries: NSTextField!
     @IBOutlet weak var previewImage: NSImageView!
+    @IBOutlet weak var selectLabel: NSTextField!
+    @IBOutlet weak var nameTextField: NSTextField!
+    @IBOutlet weak var randomUuid: NSButton!
+    @IBOutlet weak var generateButton: NSButton!
     
     var data: AmiiboResponse?
     var itemSelected: Amiibo!
@@ -29,6 +33,10 @@ class ViewController: NSViewController {
         name.stringValue = ""
         gameSeries.stringValue = ""
         
+        nameTextField.isHidden = true
+        randomUuid.isHidden = true
+        generateButton.isHidden = true
+        
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -40,7 +48,8 @@ class ViewController: NSViewController {
     }
     @IBAction func generateJson(_ sender: Any) {
         if let amiibo = self.itemSelected {
-            AmiiboHelper.shared.generateJson(amiibo: amiibo)
+            let checkboxState = (randomUuid.state == NSControl.StateValue.on)
+            AmiiboHelper.shared.generateJson(amiibo: amiibo, randomUuid: checkboxState, name: nameTextField.stringValue)
         }
     }
     
@@ -89,6 +98,12 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate
 
             name.stringValue = itemSelected?.name ?? "Test"
             gameSeries.stringValue = itemSelected?.gameSeries ?? "Test"
+            nameTextField.stringValue = itemSelected?.name ?? "Amiibo"
+            selectLabel.isHidden = true
+            
+            nameTextField.isHidden = false
+            randomUuid.isHidden = false
+            generateButton.isHidden = false
         }
     }
 }
