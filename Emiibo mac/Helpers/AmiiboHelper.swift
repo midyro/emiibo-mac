@@ -47,11 +47,12 @@ class AmiiboHelper {
     
     func generateJson(amiibo: Amiibo, randomUuid: Bool = true, name: String?){
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MMM-dd"
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         let date = Date()
         
         let tags: Tag = Tag(randomUuid:randomUuid, uuid: UUID().uuidString)
-        let model: Mode = Mode(amiiboId: amiibo.tail)
+        let amiiboId = amiibo.head + amiibo.tail
+        let model: Mode = Mode(amiiboId: amiiboId)
         let register: Register = Register(name: name ?? amiibo.name, firstWriteDate: dateFormatter.string(from: date), miiCharInfo: "mii-charinfo.bin")
         let common: Common = Common(lastWriteDate: dateFormatter.string(from: date), writeCounter: 0, version: 0)
         let path = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Desktop", isDirectory: true).appendingPathComponent("emiibo", isDirectory: true).appendingPathComponent(name ?? amiibo.name, isDirectory: true)
