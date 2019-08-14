@@ -62,6 +62,7 @@ class AmiiboHelper {
         createJsonFile(name: "register", content: register, path: path)
         createJsonFile(name: "common", content: common, path: path)
         
+        completeAlert()
     }
     
     private func createJsonFile<T : Encodable>(name: String, content: T, path: URL) {
@@ -87,5 +88,13 @@ class AmiiboHelper {
         return NetworkReachabilityManager()?.isReachable ?? false
     }
     
+    private func completeAlert() {
+        let alert = NSAlert()
+        alert.messageText = "Done!"
+        alert.informativeText = "The amiibo is created!"
+        alert.alertStyle = .informational
+        alert.addButton(withTitle: "OK")
+        alert.runModal()
+    }
 }
 
